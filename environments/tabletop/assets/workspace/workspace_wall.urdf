@@ -1,0 +1,177 @@
+<?xml version="0.0" ?>
+<robot name="workspace_wall.urdf">
+  <link name="base_link">
+    <contact>
+      <lateral_friction value="1.0"/>
+      <inertia_scaling value="3.0"/>
+    </contact>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value="0"/>
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="plane.obj" scale="0.0167 0.0333 1"/>
+      </geometry>
+      <material name="DarkGrey">
+        <color rgba="0.2 0.2 0.2 1"/>
+      </material>
+    </visual>
+  </link>
+
+  <joint name="wall_1" type="fixed">
+    <parent link="base_link"/>
+    <child link="wall_1_link"/>
+    <origin rpy="0 0 0" xyz="0 -0.5 0"/>
+  </joint>
+  <link name="wall_1_link">
+    <inertial>
+      <mass value="0"/>
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <box size="0.5 0.02 0.04"/>
+      </geometry>
+      <material name="Gray">
+        <color rgba="0.7 0.7 0.7 1"/>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.5 0.02 0.04"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="wall_2" type="fixed">
+    <parent link="base_link"/>
+    <child link="wall_2_link"/>
+    <origin rpy="0 0 0" xyz="0 0.5 0"/>
+  </joint>
+  <link name="wall_2_link">
+    <inertial>
+      <mass value="0"/>
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <box size="0.5 0.02 0.04"/>
+      </geometry>
+      <material name="Gray">
+        <color rgba="0.7 0.7 0.7 1"/>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.5 0.02 0.04"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="wall_3" type="fixed">
+    <parent link="base_link"/>
+    <child link="wall_3_link"/>
+    <origin rpy="0 0 0" xyz="-0.25 0 0"/>
+  </joint>
+  <link name="wall_3_link">
+    <inertial>
+      <mass value="0"/>
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <box size="0.02 1.0 0.04"/>
+      </geometry>
+      <material name="Gray">
+        <color rgba="0.7 0.7 0.7 1"/>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.02 1.0 0.04"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="wall_4" type="fixed">
+    <parent link="base_link"/>
+    <child link="wall_4_link"/>
+    <origin rpy="0 0 0" xyz="0.25 0 0"/>
+  </joint>
+  <link name="wall_4_link">
+    <inertial>
+      <mass value="0"/>
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <box size="0.02 1.0 0.04"/>
+      </geometry>
+      <material name="Gray">
+        <color rgba="0.7 0.7 0.7 1"/>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.02 1.0 0.04"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="wall_5" type="fixed">
+    <parent link="base_link"/>
+    <child link="wall_5_link"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+  </joint>
+  <link name="wall_5_link">
+    <inertial>
+      <mass value="0"/>
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <box size="0.5 0.02 0.04"/>
+      </geometry>
+      <material name="Gray">
+        <color rgba="0.7 0.7 0.7 1"/>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.5 0.02 0.04"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="wall_6" type="fixed">
+    <parent link="base_link"/>
+    <child link="wall_6_link"/>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+  </joint>
+  <link name="wall_6_link">
+    <inertial>
+      <mass value="0"/>
+      <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <box size="0.02 1.0 0.04"/>
+      </geometry>
+      <material name="Gray">
+        <color rgba="0.7 0.7 0.7 1"/>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.02 1.0 0.04"/>
+      </geometry>
+    </collision>
+  </link>
+
+  
+
+</robot>
+
