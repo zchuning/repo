@@ -1,4 +1,4 @@
-## RePo: Resillient Model-Based Reinforcement Learning by Regularizing Posterior Predictability
+## RePo: Resilient Model-Based Reinforcement Learning by Regularizing Posterior Predictability
 
 ####  [[Website]](https://zchuning.github.io/repo-website/) [[Paper]](https://arxiv.org/abs/2309.00082) [[Talk]](https://youtu.be/DQGVD6KaVf8)
 
@@ -6,7 +6,7 @@
 
 <sup>1</sup>University of Washington <sup>2</sup>MIT </br>
 
-This is a PyTorch implementation for the RePo algorithm. RePo is a visual model-based reinforcement learning method that learns a minimally task-relevant representation, making it resillient to uncontrollable distractors in the environment. We also provide implementations of Dreamer, TIA, DBC, and DeepMDP.
+This is a PyTorch implementation for the RePo algorithm. RePo is a visual model-based reinforcement learning method that learns a minimally task-relevant representation, making it resilient to uncontrollable distractors in the environment. We also provide implementations of Dreamer, TIA, DBC, and DeepMDP.
 
 ## Instructions
 
@@ -73,8 +73,8 @@ If you find this code useful, please cite:
 
 ```
 @article{zhu2023repo,
-  author    = {Zhu, Chuning and Simchowitz, Max and Gudipadi, Siri. and Gupta, Abhishek},
-  title     = {RePo: Resillient Model-Based Reinforcement Learning by Regularizing Posterior Predictability},
+  author    = {Zhu, Chuning and Simchowitz, Max and Gadipudi, Siri and Gupta, Abhishek},
+  title     = {RePo: Resilient Model-Based Reinforcement Learning by Regularizing Posterior Predictability},
   booktitle = {ArXiv Preprint},
   year      = {2023},
 }
