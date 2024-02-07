@@ -72,10 +72,12 @@ python experiments/adapt_repo.py --algo repo_calibrate --env_id dmc_distracted-w
 If you find this code useful, please cite:
 
 ```
-@article{zhu2023repo,
-  author    = {Zhu, Chuning and Simchowitz, Max and Gadipudi, Siri and Gupta, Abhishek},
-  title     = {RePo: Resilient Model-Based Reinforcement Learning by Regularizing Posterior Predictability},
-  booktitle = {ArXiv Preprint},
-  year      = {2023},
+@inproceedings{
+zhu2023repo,
+title={RePo: Resilient Model-Based Reinforcement Learning by Regularizing Posterior Predictability},
+author={Chuning Zhu and Max Simchowitz and Siri Gadipudi and Abhishek Gupta},
+booktitle={Thirty-seventh Conference on Neural Information Processing Systems},
+year={2023},
+url={https://openreview.net/forum?id=OIJ3VXDy6s}
 }
 ```
