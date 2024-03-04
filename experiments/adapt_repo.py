@@ -3,6 +3,7 @@ import numpy as np
 from copy import deepcopy
 from gym import spaces
 
+from setup import AttrDict, parse_arguments, set_seed, set_device, setup_logger
 from algorithms.repo import (
     Dreamer,
     RePo,
@@ -12,7 +13,6 @@ from algorithms.repo import (
 from environments import make_env
 from environments.dmc import DMCEnv
 from environments.wrappers import NormalizeAction, TimeLimit, ActionRepeat, MazeWrapper
-from setup import AttrDict, parse_arguments, set_seed, set_device, setup_logger
 
 
 class PairedDMCEnv(DMCEnv):

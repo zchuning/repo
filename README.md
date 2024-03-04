@@ -24,7 +24,7 @@ pip install -r requirements.txt
 
 
 ## Distracted DMC experiments
-Use one of the following commands to train an agent on distracted Walker Walk. To train on other distracted DMC environments,
+To train on DMC with natural video distractors, download the driving_car videos from Kinetics 400 dataset following these [instructions](https://github.com/Showmax/kinetics-downloader). Then, use one of the following commands to train an agent on distracted Walker Walk. To train on other distracted DMC environments,
 replace `walker-walk` with `{domain}-{task}`:
 
 ```

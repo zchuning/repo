@@ -10,11 +10,11 @@ import sys
 import torch
 import wandb
 
-from common.logger import configure_logger
-from common.utils import set_gpu_mode
-
 sys.path.append(".")
 os.environ["WANDB_START_METHOD"] = "thread"
+
+from common.logger import configure_logger
+from common.utils import set_gpu_mode
 
 
 class AttrDict(dict):

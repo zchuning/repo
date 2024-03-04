@@ -1,9 +1,9 @@
 from copy import deepcopy
 
+from setup import AttrDict, parse_arguments, set_seed, set_device, setup_logger
 from algorithms.bisim import Bisim, DeepMDP
 from environments import make_env
 from environments.wrappers import FrameStack
-from setup import AttrDict, parse_arguments, set_seed, set_device, setup_logger
 
 
 def get_config():

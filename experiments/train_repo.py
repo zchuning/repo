@@ -1,8 +1,8 @@
 from copy import deepcopy
 
+from setup import AttrDict, parse_arguments, set_seed, set_device, setup_logger
 from algorithms.repo import Dreamer, MultitaskDreamer, RePo, MultitaskRePo, TIA
 from environments import make_env, make_multitask_env
-from setup import AttrDict, parse_arguments, set_seed, set_device, setup_logger
 
 
 def get_config():
